@@ -1,3 +1,16 @@
+<script context="module">
+    export function load({ session, props }) {
+        if (session.user) {
+            return {
+                status: 302,
+                redirect: "/"
+            }
+        }
+
+        return { props }
+    }
+</script>
+
 <script>
     import { send } from '$lib/api';
   
