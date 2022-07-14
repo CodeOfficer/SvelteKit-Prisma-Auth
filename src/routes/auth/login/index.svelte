@@ -1,7 +1,5 @@
 <script context="module">
     export function load({ session, props }) {
-        console.log(session);
-
         if (session.user) {
             return {
                 status: 302,
@@ -62,7 +60,7 @@
         <p class="error">{error}</p>
     {/if}
   
-    <button type="submit">Sign Up</button>
+    <button type="submit">Login</button>
   </form>
   
   <style>
